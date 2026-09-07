@@ -1,12 +1,11 @@
 /**************************************************************************
  *     File: Lab03.asm
  * Lab Name: Lab 03
- *   Author: John Hutton
- *  Created: 09/16/2022
+ *   Author: Sammy Mohamed
+ *  Created: 09/07/2026
  *
- * This program simulates reading sensor data and doing operations on them.
- * It uses memory locations for sensors and result writes.
- * We hope to learn more about branching in assembly.
+ * This program reads simulated sensor data from SRAM, 
+ *compares the values, and stores the result in SRAM
  *************************************************************************/
 
 /************************************************************************
