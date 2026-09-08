@@ -27,7 +27,9 @@
  * NOTE:  For testing, you can modify these after loading them
  * to make sure all of your branches work properly
  ***********************************************************************/
-
+.equ THRESHOLD = 0x90
+.def Sensor1 = R20
+.def Sensor2 = R21
 .org 0x0000 ; next instruction will be written to address 0x0000
             ; (the location of the reset vector)
 RJMP main	; set reset vector to point to the main code entry point
@@ -42,3 +44,60 @@ main:       ; jump here on reset
 
     ;----------------------------------
     ; student-written code begins here    
+LDI R16, 0x61
+LDI R17, 0x97
+
+LDI XH, high(0x0100)
+LDI XL, low(0x0100)
+
+ST X+, R16
+ST X, R17
+
+LDI YH, high(0x0100)
+LDI YL, low(0x0100)
+
+LD Sensor1, Y+
+LD Sensor2, Y
+
+LDI YH, high(0x0110)
+LDI YL, low(0x0110)
+
+CPI Sensor1, THRESHOLD
+BRSH sensor1_ge
+
+LDI R18, 0x50
+ST Y+, R18
+RJMP store_sensor1
+
+sensor1_ge:
+LDI R18, 0x46
+ST Y+, R18
+
+store_sensor1:
+ST Y+, Sensor1
+
+CPI Sensor2, THRESHOLD
+BRLT sensor2_less
+
+LDI R18, 0x73
+ST Y+, R18
+RJMP compare_sensors
+
+sensor2_less:
+LDI R18, 0x69
+ST Y+, R18
+
+compare_sensors:
+CP Sensor1, Sensor2
+BREQ sensors_equal
+
+LDI R18, 115
+ST Y, R18
+RJMP done
+
+sensors_equal:
+LDI R18, 108
+ST Y, R18
+
+done:
+NOP

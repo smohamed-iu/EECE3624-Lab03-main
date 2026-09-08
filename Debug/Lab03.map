@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Git\EECE3624-Lab03\Lab03.asm Mon Sep 09 15:43:40 2024
+AVRASM ver. 2.2.8  C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm Mon Sep 07 17:21:49 2026
 
 
 EQU  SIGNATURE_000 0000001e
@@ -871,3 +871,9 @@ EQU  THRESHOLD    00000090
 DEF  Sensor1      r20
 DEF  Sensor2      r21
 CSEG main         00000001
+CSEG sensor1_ge   00000016
+CSEG store_sensor1 00000018
+CSEG sensor2_less 0000001e
+CSEG compare_sensors 00000020
+CSEG sensors_equal 00000025
+CSEG done         00000027

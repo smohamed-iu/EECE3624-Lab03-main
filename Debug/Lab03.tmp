@@ -1,18 +1,18 @@
 <ASSEMBLER_INFO>
  <VERSION>2.2.8</VERSION>
  <DEVICE>"ATmega128A"</DEVICE>
- <WORKING_DIR>C:\Git\EECE3624-Lab03\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
   <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Git\EECE3624-Lab03\Lab03.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m128adef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Git\EECE3624-Lab03\Debug\Lab03.obj</FILE>
+  <FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Debug\Lab03.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>Lab03.hex</FILE>
@@ -22,6 +22,12 @@
   <FILE>Lab03.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <main><FILE>C:\Git\EECE3624-Lab03\Lab03.asm</FILE><LINE>40</LINE></main>
+  <main><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>37</LINE></main>
+  <sensor1_ge><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>72</LINE></sensor1_ge>
+  <store_sensor1><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>76</LINE></store_sensor1>
+  <sensor2_less><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>86</LINE></sensor2_less>
+  <compare_sensors><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>90</LINE></compare_sensors>
+  <sensors_equal><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>98</LINE></sensors_equal>
+  <done><FILE>C:\Users\sammy\Downloads\EECE3624-Lab03-main\Lab03.asm</FILE><LINE>102</LINE></done>
  </LABELS>
 </ASSEMBLER_INFO>
